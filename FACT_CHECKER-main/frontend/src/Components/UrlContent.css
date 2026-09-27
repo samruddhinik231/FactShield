@@ -1,0 +1,28 @@
+textarea, select, input[type="file"] {
+    width: 50%;
+    border: 1px solid #d1d5db; /* Soft gray border */
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 15px; /* Added gap between fields */
+  }
+
+  .conatainer{
+    background: #faf9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 30px auto;
+   
+  }
+
+  .Scarpurl{
+    background: linear-gradient(90deg, #1e77fd, #0f74f8);
+  }
+
+  .validator-title1{
+    font-weight: bolder;
+    font-size: 50px;
+  }
+  

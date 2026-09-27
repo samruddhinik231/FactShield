@@ -1,0 +1,97 @@
+ /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #797a7c, #000000);
+    
+}
+
+
+.homepage-container {
+    position: relative; /* Required for the pseudo-element */
+    overflow: hidden; /* To ensure the blur effect stays within the container */
+    height: 90vh;
+}
+
+.homepage-container::before {
+    content: ''; /* Required to create the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Images/back.webp');
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px); /* Apply blur to the background */
+    z-index: -1; /* Ensures the blur stays behind the content */
+}
+
+.homepage-header {
+   
+    color: white;
+    padding: 20px 0;
+    height: 200px;
+    margin-bottom: 40px;
+}
+
+.homepage-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.homepage-header-image {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+
+.containerCard{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px; 
+}
+
+.homepage-option {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    width: 30%;
+    text-align: center;
+   
+}
+
+
+
+.homepage-option h2 {
+    margin-top: 50px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.homepage-option p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.homepage-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width:300px;
+}
+
+.homepage-btn:hover {
+    background-color: white;
+    color: black;
+}

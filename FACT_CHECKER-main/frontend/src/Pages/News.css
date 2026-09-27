@@ -1,0 +1,45 @@
+.card {
+    width: 100%;  
+    height: 400px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; 
+  }
+  
+  .card-img-top {
+    object-fit: cover;  
+    height: 200px; 
+    width: 100%; 
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 160px;  
+  }
+  
+  .card-title {
+    font-size: 1.2rem;  
+    font-weight: bold;
+    margin-bottom: 10px;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap;  
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #555;
+    height: 60px; 
+    overflow: hidden; 
+  }
+  
+  .card .btn {
+    align-self: flex-start;  
+    margin-top: 10px;
+  }
+  

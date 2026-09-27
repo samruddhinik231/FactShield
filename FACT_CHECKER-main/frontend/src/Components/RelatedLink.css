@@ -1,0 +1,128 @@
+/* Container for Related Links */
+.related-links-container {
+  margin: 30px auto;
+  max-width: 1800px;
+  padding: 20px;
+  background-color: #cccccc;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+}
+
+/* Title */
+.related-links-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Links List */
+.related-links-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Link Item */
+.related-link-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.related-link-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Link Details */
+.link-details {
+  flex-grow: 1;
+  margin-right: 20px;
+  max-width: 75%; /* Ensure link details take a fixed portion of the container */
+}
+
+.link-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+  white-space: nowrap; /* Prevent text wrapping for headings */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+}
+
+.link-meta {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.website-name {
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Link URL */
+.link-url {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.link-url:hover {
+  text-decoration: underline;
+}
+
+/* Open Link Button */
+.open-link-button {
+  text-decoration: none;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  color: #fff;
+  width: 120px; /* Fixed width */
+  height: 40px; /* Fixed height */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0; /* Prevent button from shrinking */
+}
+
+.open-link-button:hover {
+  background: linear-gradient(90deg, #0056b3, #003f7f);
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .related-link-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .link-details {
+    max-width: 100%; /* Allow full width for link details on smaller screens */
+  }
+
+  .open-link-button {
+    width: 100%; /* Button takes full width on smaller screens */
+    margin-top: 10px;
+  }
+}

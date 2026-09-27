@@ -1,0 +1,16 @@
+.custom-logo {
+    width: 50px; /* Set your desired width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 50px; 
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    margin-top: 0px;
+  }
+/* .logo-name{
+   padding-top: 20px;
+} */
+
+.custom-logo img{
+  
+}
+ 

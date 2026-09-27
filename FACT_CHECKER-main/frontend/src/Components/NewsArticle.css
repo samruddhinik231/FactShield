@@ -1,0 +1,89 @@
+/* NewsCard Styling */
+.Newscard {
+  background-color: #fff;
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-height: 400px; /* Ensures cards have consistent height */
+}
+
+.Newscard:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Align content properly */
+}
+
+.card-title {
+  font-size: 1.2rem;
+  color: #333;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #666;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-body .btn {
+  background: #000;
+  color: #fff;
+  border: 2px solid #000;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.card-body .btn:hover {
+  background: #fff;
+  color: #000;
+}
+/* Ensure consistent card layout */
+.Newscard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space content within the card */
+  background-color: #fff;
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-height: 400px; /* Ensure consistent card height */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column; /* Stack content */
+  justify-content: space-between; /* Align content properly */
+  height: 100%;
+  padding: 15px;
+}
+
+.card-body .btn {
+  margin-top: auto; /* Push button to the bottom */
+  background: #000;
+  color: #fff;
+  border: 2px solid #000;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  transition: background 0.3s, color 0.3s;
+}
+
+.card-body .btn:hover {
+  background: #fff;
+  color: #000;
+}
